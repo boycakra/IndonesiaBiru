@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.kpapp" >
-<uses-permission android:name="android.permission.INTERNET">
 
-</uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,26 +19,6 @@
             android:name="com.example.kpapp.Menu"
             android:screenOrientation="portrait">
         </activity>
-        <activity
-            android:name="com.example.kpapp.DivesiteActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name="com.example.kpapp.About"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".MapsActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".Divesiteinfo"
-            android:screenOrientation="portrait">
-        </activity>
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
     </application>
 
 </manifest>
