@@ -18,11 +18,11 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="52dp"
+        android:layout_height="31dp"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/logo"
+        app:srcCompat="@drawable/logoatas"
          />
     </LinearLayout>
     <LinearLayout
