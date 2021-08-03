@@ -22,7 +22,7 @@
         android:layout_height="100dp"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/logo"
+        app:srcCompat="@drawable/logoatas"
          />
     </LinearLayout>
     <LinearLayout
