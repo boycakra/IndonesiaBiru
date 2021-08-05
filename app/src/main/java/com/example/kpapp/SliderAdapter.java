@@ -36,13 +36,15 @@ public class SliderAdapter extends SliderViewAdapter<SliderAdapter.Holder>{
         return images.length;
     }
 
-    public static class Holder extends  SliderViewAdapter.ViewHolder{
+    public class Holder extends  SliderViewAdapter.ViewHolder{
 
         ImageView imageView;
 
-        public Holder(View itemView) {
+        public Holder(View itemView){
             super(itemView);
             imageView = itemView.findViewById(R.id.image_view);
+
         }
     }
+
 }
