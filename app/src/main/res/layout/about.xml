@@ -7,56 +7,40 @@
     android:background="@color/black"
     >
     <LinearLayout
-        android:id="@+id/layoutatas"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         >
 
+
+        <LinearLayout
+            android:id="@+id/logoatasabout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             <ImageView
                 android:id="@+id/logoatas"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 app:srcCompat="@drawable/logoatas"
                 android:layout_marginTop="10dp"
-               android:layout_gravity="center"
+                android:layout_marginLeft="150dp"
                 />
-
         <LinearLayout
-            android:id="@+id/layoutlogotengah"
+            android:id="@+id/logotengahabout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            tools:ignore="MissingConstraints">
-            <ImageView
-                android:layout_gravity="center"
-                android:id="@+id/logotengah"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_marginTop="5dp"
-                app:srcCompat="@drawable/logoibfkotak"
-                />
+            android:layout_below="@id/logoatasabout"
 
-        </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/textlayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <TextView
-                android:id="@+id/textabout"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="ESTABLISHED IN 2020, INDONESIA BIRU FOUNDATION IS AN INDEPENDENT ORGANIZATION DOING CORAL REEF RESEARCH, RESTORATION, AND COASTAL COMMUNITIES DEVELOPMENT. IT IS OUR VISION IS TO INCREASE THE MARINE LITERACY OF INDONESIAN CITIZENS. OUR MAIN APPROACH IS SCIENCE BUT WE ALSO WORK TOGETHER WITH A LOT OF LOCAL COMMUNITIES TO INTEGRATE SCIENTIFIC FINDINGS FOR PRACTICAL USE IN THE FIELD. WE ARE BASED IN A PARADISE ISLAND, LOMBOK – BALI’S NEIGHBOURING ISLAND TO THE EAST."
-               android:layout_marginHorizontal="10dp"
-                android:textColor="@color/white"
-                android:layout_marginTop="30dp"
-                android:textSize="16sp"
-                android:justificationMode="inter_word"
-                />
+        <ImageView
+            android:id="@+id/logotengah"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
 
-    </LinearLayout>
+
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
