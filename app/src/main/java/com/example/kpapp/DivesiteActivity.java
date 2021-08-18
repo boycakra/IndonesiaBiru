@@ -1,31 +1,29 @@
 package com.example.kpapp;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Application;
-import android.content.Intent;
+import android.content.Context;
+import android.media.Image;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.content.Intent;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.FirebaseCommonRegistrar;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
-public class DivesiteActivity extends AppCompatActivity{
+public class Divesite  extends AppCompatActivity{
     private RecyclerView divesitelist;
     private DatabaseReference mdatabase;
-    private FirebaseRecyclerAdapter firebaseRecyclerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,81 +31,37 @@ public class DivesiteActivity extends AppCompatActivity{
         setContentView(R.layout.divesite);
         mdatabase = FirebaseDatabase.getInstance().getReference().child("divesite");
         mdatabase.keepSynced(true);
-        mdatabase.get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
-
-
-            @Override
-            public void onComplete(@NonNull Task<DataSnapshot> task) {
-                if (!task.isSuccessful()) {
-                    Log.e("firebase", "Error getting data", task.getException());
-                }
-                else {
-                    Log.d("firebase", String.valueOf(task.getResult()));
-                }
-            }
-        });
-        Log.d("result",mdatabase.toString());
         divesitelist =(RecyclerView)findViewById(R.id.rycleview);
         divesitelist.setHasFixedSize(true);
         divesitelist.setLayoutManager(new LinearLayoutManager(this));
-        firebaseRecyclerAdapter= new FirebaseRecyclerAdapter<Divesitemodel,divesiteholder>
-                (Divesitemodel.class,R.layout.divesitecyle,divesiteholder.class,mdatabase) {
-            @Override
-            protected void populateViewHolder(divesiteholder viewHolder, Divesitemodel model, int position) {
-                viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(v.getContext(), Divesiteinfo.class);
-                        intent.putExtra("Divesitelabel",model.getLabeltempat());
-                        intent.putExtra("Divesitenamatempat",model.getNamatempat());
-                        intent.putExtra("Gambardivesite",model.getPictempat());
-                        intent.putExtra("Deskripsi",model.getDeskripsi());
-                        intent.putExtra("longtitude",model.getLongtitude().toString());
-                        intent.putExtra("latitude",model.getLatitude().toString());
-
-                        //Toast.makeText(v.getContext(),model.getLongtitude().toString(),Toast.LENGTH_LONG).show();
-                        v.getContext().startActivity(intent);
-
-                    }
-                });
-                viewHolder.setLabeltempat(model.getLabeltempat());
-                viewHolder.setpictempat(getApplication(),model.getPictempat());
-                viewHolder.setPin(getApplication(),model.getPin());
-                viewHolder.setNamatempat(model.getNamatempat());
-                viewHolder.setdeskripsi(model.getDeskripsi());
-                viewHolder.setLongtitude(model.getLongtitude());
-                viewHolder.setLatitude(model.getLatitude());
-            }
-        };
-        divesitelist.setAdapter(firebaseRecyclerAdapter);
-
-        ImageView imageview2 = (ImageView) findViewById(R.id.iconindo);
-        imageview2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(DivesiteActivity.this, About.class);
-                startActivity(intent);
-            }
-        });
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-
+        FirebaseRecyclerAdapter<divesiteadapter,divesiteholder>firebaseRecyclerAdapter= new FirebaseRecyclerAdapter<divesiteadapter,divesiteholder>
+                () {
+            @Override
+            protected void populateViewHolder(divesiteholder viewHolder, divesiteadapter model, int position) {
+                viewHolder.setLabeltempat(model.getLabeltempat());
+                viewHolder.setpictempat(getApplication(),model.getPictempat());
+                viewHolder.setPin(getApplication(),model.getPin());
+                viewHolder.setNamatempat(model.getNamatempat());
+            }
+        };
     }
-    public static class divesiteholder extends RecyclerView.ViewHolder
+    public static class divesiteholder extends android.support.v7.widget.RecyclerView.ViewHolder
     {
         View mView;
         public divesiteholder(View itemView)
         {
             super(itemView);
             mView=itemView;
-
         }
         public void setpictempat(Application ctx,String pictempat){
             ImageView post_pictempat=(ImageView) mView.findViewById(R.id.mainpic);
             Picasso.get().load(pictempat).into(post_pictempat);
+
         }
         public void setLabeltempat (String labeltempat){
             TextView post_labeltempat=(TextView)mView.findViewById(R.id.tempatlbl);
@@ -120,18 +74,6 @@ public class DivesiteActivity extends AppCompatActivity{
         public void setNamatempat(String namatempat){
             TextView post_namatempat=(TextView) mView.findViewById(R.id.tempatsite);
             post_namatempat.setText(namatempat);
-        }
-        public  void setdeskripsi(String deskripsi){
-            TextView post_deskripsi=(TextView) mView.findViewById(R.id.deskripsidivesite);
-            post_deskripsi.setText((deskripsi));
-        }
-        public  void setLongtitude(Double longtitude){
-            TextView post_longtitude=(TextView)mView.findViewById(R.id.longdivesite);
-            post_longtitude.setText(Double.toString(longtitude));
-        }
-        public  void setLatitude(Double latitude){
-            TextView post_latitude=(TextView)mView.findViewById(R.id.latdivesite);
-            post_latitude.setText(Double.toString((latitude)));
         }
     }
 }
