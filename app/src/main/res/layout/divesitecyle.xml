@@ -22,7 +22,7 @@
             >
 
         </ImageView>
-
+        [7:45 PM]
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -74,20 +74,20 @@
             android:id="@+id/pinlayout">
 
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_below="@id/mainpic"
-            android:id="@+id/pin">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/mainpic"
+                android:id="@+id/pin">
 
-        </ImageView>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            </ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
 
         </LinearLayout>
-
-    </LinearLayout>
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

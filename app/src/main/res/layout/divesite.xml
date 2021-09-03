@@ -28,6 +28,7 @@
     android:layout_height="match_parent"
     android:id="@+id/rycleview"
     android:layout_below="@id/iconindo"
+    tools:listitem="@layout/divesitecyle"
     >
 
 </androidx.recyclerview.widget.RecyclerView>
