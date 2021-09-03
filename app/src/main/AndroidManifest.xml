@@ -25,6 +25,10 @@
             android:name="com.example.kpapp.DivesiteActivity"
             android:screenOrientation="portrait">
         </activity>
+        <activity
+            android:name="com.example.kpapp.About"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>

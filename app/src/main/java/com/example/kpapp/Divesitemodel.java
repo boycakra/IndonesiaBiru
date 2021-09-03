@@ -12,7 +12,6 @@ public class Divesitemodel {
         this.pictempat = pictempat;
         this.pin = pin;
     }
-
     public String getLabeltempat() {
         return labeltempat;
     }
