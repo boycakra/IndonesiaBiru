@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "291997018789",
+    "firebase_url": "https://indonesiabiru-5ea4f-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "indonesiabiru-5ea4f",
+    "storage_bucket": "indonesiabiru-5ea4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291997018789:android:7ae8c7fea976a29739bb4c",
+        "android_client_info": {
+          "package_name": "com.example.kpapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291997018789-bg53uor9vlmrq8pcic4np39br5d92qkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0lpA3xSJoPpf-EcTjsrVRqpBWMbfkMv8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "291997018789-bg53uor9vlmrq8pcic4np39br5d92qkl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

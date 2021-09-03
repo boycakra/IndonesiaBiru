@@ -22,7 +22,7 @@
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name="com.example.kpapp.Divesite"
+            android:name="com.example.kpapp.DivesiteActivity"
             android:screenOrientation="portrait">
         </activity>
     </application>
