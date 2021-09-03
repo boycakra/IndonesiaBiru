@@ -3,9 +3,9 @@ package com.example.kpapp;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.content.Intent;
-import android.widget.ImageButton;
+import android.widget.ImageView;
+
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
@@ -29,5 +29,14 @@ public class Menu extends AppCompatActivity {
         sliderView.setIndicatorAnimation(IndicatorAnimationType.WORM);
         sliderView.setSliderTransformAnimation(SliderAnimations.DEPTHTRANSFORMATION);
         sliderView.startAutoCycle();
+
+        ImageView imageView1 = (ImageView) findViewById(R.id.text2);
+        imageView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menu.this, DivesiteActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -4,11 +4,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Divesite"
+    tools:context=".DivesiteActivity"
     android:background="@color/black">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iconindo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/logoatas"
 
+            />
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rycleview"
+    android:layout_below="@id/iconindo"
+    >
+
+</androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

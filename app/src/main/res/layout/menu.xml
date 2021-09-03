@@ -99,6 +99,7 @@
             app:srcCompat="@drawable/dive"
             />
 
+
         <ImageView
             android:id="@+id/text3"
             android:layout_below="@+id/kotak2"

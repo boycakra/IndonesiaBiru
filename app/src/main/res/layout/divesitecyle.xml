@@ -1,92 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_marginVertical="5dp"
-    android:layout_marginHorizontal="15dp"
     android:layout_width="match_parent"
-    android:layout_height="300dp"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    app:cardCornerRadius="10dp"
-    android:elevation="90dp">
-
-    <RelativeLayout
+    app:cardCornerRadius="12dp"
+    android:elevation="90dp"
+    >
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#2E324B"
+        android:layout_height="280dp"
+        android:background="#00B1D2"
         android:orientation="vertical"
-        android:elevation="90dp">
-
+        android:elevation="90dp"
+        >
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="180dp"
             android:scaleType="centerCrop"
-            android:id="@+id/mainpic">
+            android:id="@+id/mainpic"
+            >
+
         </ImageView>
 
-        <ImageView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/divisite_shadow">
-        </ImageView>
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mainpic"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
 
-        <TextView
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="30dp"
-            android:gravity="bottom"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Label"
-            android:id="@+id/tempatlbl"
-            android:textColor="@color/white" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Label"
+                android:id="@+id/tempatlbl"
+                android:textColor="@color/white"
+                />
 
-        <TextView
-            android:textSize="14sp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginBottom="10dp"
-            android:gravity="bottom"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Nama tempat"
-            android:id="@+id/tempatsite"
-            android:textColor="@color/white">
-        </TextView>
 
-        <TextView
-            android:gravity="bottom"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="invisible"
-            android:text="Penjelasan"
-            android:id="@+id/deskripsidivesite"
-            android:textColor="@color/white">
-        </TextView>
-        <TextView
-            android:gravity="bottom"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="invisible"
-            android:text="longtitude"
-            android:id="@+id/longdivesite"
-            android:textColor="@color/white">
-        </TextView>
 
-        <TextView
-            android:id="@+id/latdivesite"
+
+
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="bottom"
-            android:text="latitude"
-            android:textColor="@color/white"
-            android:visibility="invisible">
-        </TextView>
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mainpic"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama tempat"
+                android:id="@+id/tempatsite"
+                android:textColor="@color/white"
+                >
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-50dp"
+            android:id="@+id/pinlayout">
+
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_below="@id/mainpic"
             android:id="@+id/pin">
+
         </ImageView>
-    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
 </androidx.cardview.widget.CardView>
