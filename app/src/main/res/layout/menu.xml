@@ -56,7 +56,7 @@
             android:layout_centerHorizontal="true"
             android:layout_below="@id/image_slider"
             android:textAlignment="center"
-            android:text="Auto Image Slider Tutorial"
+            android:text="BIARKAN LAUT MEMBEBASKANKUM"
             android:textSize="20sp"
             >
 

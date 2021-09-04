@@ -1,14 +1,15 @@
 package com.example.kpapp;
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.content.Intent;
 import android.widget.ImageView;
 
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
+
+import androidx.appcompat.app.AppCompatActivity;
 public class Menu extends AppCompatActivity {
     SliderView sliderView;
     int[] images = {R.drawable.kura,
@@ -43,6 +44,14 @@ public class Menu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Menu.this, About.class);
+                startActivity(intent);
+            }
+        });
+        ImageView imageView3 = (ImageView) findViewById(R.id.text3);
+        imageView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menu.this,MapsActivity.class);
                 startActivity(intent);
             }
         });
