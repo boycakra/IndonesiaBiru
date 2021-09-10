@@ -13,9 +13,10 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:layout_weight="1.5"
             android:id="@+id/kotak1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/logo"
@@ -27,10 +28,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_below="@id/kotak1"
+            android:layout_weight="1"
             android:id="@+id/kotak2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
             <com.smarteist.autoimageslider.SliderView
                 android:id="@+id/image_slider"
@@ -63,36 +64,78 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/kotak3"
+            android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@id/kotak2">
+            android:layout_height="match_parent">
 
-
-
-            <LinearLayout
-                android:gravity="center"
-                android:layout_gravity="bottom"
-                android:layout_marginBottom="50dp"
+            <RelativeLayout
+                android:id="@+id/kotak3"
                 android:layout_width="match_parent"
-                android:layout_height="50dp">
+                android:layout_height="match_parent"
+                android:layout_below="@id/kotak2">
 
-                <ImageView
-                    android:id="@+id/text1"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    app:srcCompat="@drawable/icon_home" />
-                <ImageView
-                    android:id="@+id/text2"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    app:srcCompat="@drawable/icon_dive" />
-                <ImageView
-                    android:id="@+id/text3"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    app:srcCompat="@drawable/icon_maps" />
-            </LinearLayout>
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/home_indonesia_biru" />
+                    </LinearLayout>
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_marginBottom="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <LinearLayout
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/text1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/icon_home" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/text2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/icon_dive" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="left"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/text3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/icon_maps" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
