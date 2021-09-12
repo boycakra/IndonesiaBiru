@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Application;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,7 +16,6 @@ import android.widget.TextView;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -53,6 +53,17 @@ public class DivesiteActivity extends AppCompatActivity{
                 (Divesitemodel.class,R.layout.divesitecyle,divesiteholder.class,mdatabase) {
             @Override
             protected void populateViewHolder(divesiteholder viewHolder, Divesitemodel model, int position) {
+                viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(v.getContext(), Divesiteinfo.class);
+                        intent.putExtra("Divesitelabel",model.getLabeltempat());
+                        intent.putExtra("Divesitenamatempat",model.getNamatempat());
+                        intent.putExtra("Gambardivesite",model.getPictempat());
+                        v.getContext().startActivity(intent);
+
+                    }
+                });
                 viewHolder.setLabeltempat(model.getLabeltempat());
                 viewHolder.setpictempat(getApplication(),model.getPictempat());
                 viewHolder.setPin(getApplication(),model.getPin());
@@ -76,10 +87,12 @@ public class DivesiteActivity extends AppCompatActivity{
         {
             super(itemView);
             mView=itemView;
+
         }
         public void setpictempat(Application ctx,String pictempat){
             ImageView post_pictempat=(ImageView) mView.findViewById(R.id.mainpic);
             Picasso.get().load(pictempat).into(post_pictempat);
+
 
         }
         public void setLabeltempat (String labeltempat){
