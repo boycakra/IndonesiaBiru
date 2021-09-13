@@ -71,7 +71,32 @@ public class DivesiteActivity extends AppCompatActivity{
             }
         };
         divesitelist.setAdapter(firebaseRecyclerAdapter);
+        ImageView imageView1 = (ImageView) findViewById(R.id.text1);
+        imageView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DivesiteActivity.this, Menu.class);
+                startActivity(intent);
+            }
+        });
+        ImageView imageview2 = (ImageView) findViewById(R.id.iconindo);
+        imageview2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DivesiteActivity.this, About.class);
+                startActivity(intent);
+            }
+        });
+        ImageView imageView3 = (ImageView) findViewById(R.id.text3);
+        imageView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DivesiteActivity.this,MapsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
 
 
 

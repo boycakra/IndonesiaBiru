@@ -18,6 +18,7 @@ public class Menu extends AppCompatActivity {
             R.drawable.karang,
             R.drawable.ikan1,
             R.drawable.karang1};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
