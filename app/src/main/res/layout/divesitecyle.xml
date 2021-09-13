@@ -1,95 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_marginVertical="20dp"
-    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="10dp"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="300dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     app:cardCornerRadius="12dp"
-    android:elevation="90dp"
-    >
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="280dp"
-        android:background="#00B1D2"
-        android:orientation="vertical"
-        android:elevation="90dp"
-        >
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:scaleType="centerCrop"
-            android:id="@+id/mainpic"
-            >
-
-        </ImageView>
+    android:elevation="90dp">
 
         <LinearLayout
+            android:layout_weight="1.7"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/mainpic"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:layout_height="300dp"
+            android:background="#00B1D2"
+            android:orientation="vertical"
+            android:elevation="90dp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Label"
-                android:id="@+id/tempatlbl"
-                android:textColor="@color/white"
-                />
-
-
-
-
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/mainpic"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nama tempat"
-                android:id="@+id/tempatsite"
-                android:textColor="@color/white"
-                >
-
-            </TextView>
-
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="-50dp"
-            android:id="@+id/pinlayout">
-
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_below="@id/mainpic"
-                android:id="@+id/pin">
-
-            </ImageView>
             <LinearLayout
+                android:layout_weight="0.25"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
 
+                <ImageView
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/mainpic">
+                </ImageView>
             </LinearLayout>
 
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="0.7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/pinlayout">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/mainpic"
+                            android:id="@+id/pin">
+                        </ImageView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="0.8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/mainpic"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Label"
+                            android:id="@+id/tempatlbl"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="0.8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/mainpic"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Nama tempat"
+                            android:id="@+id/tempatsite"
+                            android:textColor="@color/white">
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
 
 </androidx.cardview.widget.CardView>
