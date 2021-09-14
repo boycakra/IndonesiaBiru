@@ -21,6 +21,7 @@
                 android:id="@+id/logoatas"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
                 app:srcCompat="@drawable/logoatas" />
         </LinearLayout>
 
@@ -34,9 +35,11 @@
 
             <LinearLayout
                 android:layout_weight="2"
+                android:layout_marginTop="10dp"
                 android:id="@+id/layoutlogotengah"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
                 tools:ignore="MissingConstraints">
 
                 <ImageView
@@ -57,11 +60,58 @@
                 <TextView
                     android:id="@+id/textabout"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:text="ESTABLISHED IN 2020, INDONESIA BIRU FOUNDATION IS AN INDEPENDENT ORGANIZATION DOING CORAL REEF RESEARCH, RESTORATION, AND COASTAL COMMUNITIES DEVELOPMENT. IT IS OUR VISION IS TO INCREASE THE MARINE LITERACY OF INDONESIAN CITIZENS. OUR MAIN APPROACH IS SCIENCE BUT WE ALSO WORK TOGETHER WITH A LOT OF LOCAL COMMUNITIES TO INTEGRATE SCIENTIFIC FINDINGS FOR PRACTICAL USE IN THE FIELD. WE ARE BASED IN A PARADISE ISLAND, LOMBOK – BALI’S NEIGHBOURING ISLAND TO THE EAST."
                     android:textColor="@color/white"
                     android:textSize="13sp"
                     android:justificationMode="inter_word" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="30dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/text1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/icon_home" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/text2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/icon_dive" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/text3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/icon_maps" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

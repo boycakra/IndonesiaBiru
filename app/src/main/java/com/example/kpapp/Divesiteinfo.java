@@ -1,7 +1,9 @@
 package com.example.kpapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,6 +20,7 @@ public class Divesiteinfo extends AppCompatActivity {
         String tempat= getIntent().getStringExtra("Divesitenamatempat");
         String labeltempat= getIntent().getStringExtra("Divesitelabel");
         String Gambardivesite= getIntent().getStringExtra("Gambardivesite");
+        String Deskripsi= getIntent().getStringExtra("Deskripsi");
 
         ImageView post_pictempat=(ImageView)findViewById(R.id.gambardivesite);
         Picasso.get().load(Gambardivesite).into(post_pictempat);
@@ -28,5 +31,41 @@ public class Divesiteinfo extends AppCompatActivity {
         TextView post_namatempat=(TextView)findViewById(R.id.diveinfo);
         post_namatempat.setText(tempat);
 
+        TextView post_deskripsi=(TextView)findViewById(R.id.deskripsi);
+        post_deskripsi.setText(Deskripsi);
+
+        ImageView imageView1 = (ImageView) findViewById(R.id.text1);
+        imageView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Divesiteinfo.this, Menu.class);
+                startActivity(intent);
+            }
+        });
+        ImageView imageview2 = (ImageView) findViewById(R.id.logo);
+        imageview2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Divesiteinfo.this, About.class);
+                startActivity(intent);
+            }
+        });
+        ImageView imageView3 = (ImageView) findViewById(R.id.text3);
+        imageView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Divesiteinfo.this,MapsActivity.class);
+                startActivity(intent);
+            }
+        });
+        ImageView imageView4 =(ImageView) findViewById(R.id.text2);
+        imageView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(Divesiteinfo.this,DivesiteActivity.class);
+                startActivity(intent);
+            }
+        });
     }
+
 }
