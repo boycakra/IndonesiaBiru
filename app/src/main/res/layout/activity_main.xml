@@ -32,7 +32,6 @@
                 android:id="@+id/imageView3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 app:srcCompat="@drawable/ibf_logo_no_background" />
         </LinearLayout>
 
