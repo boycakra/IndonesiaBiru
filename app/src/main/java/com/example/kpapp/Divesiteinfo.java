@@ -20,6 +20,7 @@ public class Divesiteinfo extends AppCompatActivity {
         String tempat= getIntent().getStringExtra("Divesitenamatempat");
         String labeltempat= getIntent().getStringExtra("Divesitelabel");
         String Gambardivesite= getIntent().getStringExtra("Gambardivesite");
+        String Deskripsi= getIntent().getStringExtra("Deskripsi");
 
         ImageView post_pictempat=(ImageView)findViewById(R.id.gambardivesite);
         Picasso.get().load(Gambardivesite).into(post_pictempat);
@@ -29,6 +30,9 @@ public class Divesiteinfo extends AppCompatActivity {
 
         TextView post_namatempat=(TextView)findViewById(R.id.diveinfo);
         post_namatempat.setText(tempat);
+
+        TextView post_deskripsi=(TextView)findViewById(R.id.deskripsi);
+        post_deskripsi.setText(Deskripsi);
 
         ImageView imageView1 = (ImageView) findViewById(R.id.text1);
         imageView1.setOnClickListener(new View.OnClickListener() {

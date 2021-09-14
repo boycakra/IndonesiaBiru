@@ -60,6 +60,7 @@ public class DivesiteActivity extends AppCompatActivity{
                         intent.putExtra("Divesitelabel",model.getLabeltempat());
                         intent.putExtra("Divesitenamatempat",model.getNamatempat());
                         intent.putExtra("Gambardivesite",model.getPictempat());
+                        intent.putExtra("Deskripsi",model.getDeskripsi());
                         v.getContext().startActivity(intent);
 
                     }
@@ -68,6 +69,7 @@ public class DivesiteActivity extends AppCompatActivity{
                 viewHolder.setpictempat(getApplication(),model.getPictempat());
                 viewHolder.setPin(getApplication(),model.getPin());
                 viewHolder.setNamatempat(model.getNamatempat());
+                viewHolder.setdeskripsi(model.getDeskripsi());
             }
         };
         divesitelist.setAdapter(firebaseRecyclerAdapter);
@@ -131,6 +133,10 @@ public class DivesiteActivity extends AppCompatActivity{
         public void setNamatempat(String namatempat){
             TextView post_namatempat=(TextView) mView.findViewById(R.id.tempatsite);
             post_namatempat.setText(namatempat);
+        }
+        public  void setdeskripsi(String deskripsi){
+            TextView post_deskripsi=(TextView) mView.findViewById(R.id.deskripsidivesite);
+            post_deskripsi.setText((deskripsi));
         }
     }
 }

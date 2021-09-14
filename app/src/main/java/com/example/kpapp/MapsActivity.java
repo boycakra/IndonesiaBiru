@@ -62,7 +62,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     googleMap.animateCamera(CameraUpdateFactory.zoomIn());
 
 // Zoom out to zoom level 10, animating with a duration of 2 seconds.
-                    googleMap.animateCamera(CameraUpdateFactory.zoomTo(10), 2000, null);
+                    googleMap.animateCamera(CameraUpdateFactory.zoomTo(12), 2000, null);
 
 // Construct a CameraPosition focusing on Mountain View and animate the camera to that position.
                     CameraPosition cameraPosition = new CameraPosition.Builder()

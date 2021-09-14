@@ -52,7 +52,8 @@
             android:layout_below="@id/mainpic"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:id="@+id/tempatlayout">
 
             <TextView
                 android:layout_width="match_parent"
@@ -66,6 +67,26 @@
 
 
 
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/deskripsslayout"
+            android:layout_below="@+id/tempatlayout"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:text="Penjelasan"
+                android:id="@+id/deskripsidivesite"
+                android:textColor="@color/white"
+                >
+
+            </TextView>
         </LinearLayout>
 
         <LinearLayout

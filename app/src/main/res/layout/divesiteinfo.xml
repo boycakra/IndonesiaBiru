@@ -97,6 +97,26 @@
 
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:layout_below="@id/textlayout1"
+                        android:id="@+id/textlayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/deskripsi"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Deskripsi"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:justificationMode="inter_word" />
+
+                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_marginBottom="30dp"

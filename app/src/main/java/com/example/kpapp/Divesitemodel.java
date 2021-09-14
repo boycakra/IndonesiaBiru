@@ -5,12 +5,14 @@ public class Divesitemodel {
     private String namatempat;
     private String pictempat;
     public  String pin;
+    public String deskripsi;
 
-    public Divesitemodel(String labeltempat, String namatempat, String pictempat, String pin) {
+    public Divesitemodel(String labeltempat, String namatempat, String pictempat, String pin,String deskripsi) {
         this.labeltempat = labeltempat;
         this.namatempat = namatempat;
         this.pictempat = pictempat;
         this.pin = pin;
+        this.deskripsi = deskripsi;
     }
     public String getLabeltempat() {
         return labeltempat;
@@ -43,6 +45,10 @@ public class Divesitemodel {
     public void setPin(String pin) {
         this.pin = pin;
     }
+
+    public  String getDeskripsi(){ return  deskripsi;}
+
+    public  void setDeskripsi(String deskripsi) {this.deskripsi = deskripsi;}
 
     public Divesitemodel()
     {
