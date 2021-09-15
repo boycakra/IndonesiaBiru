@@ -73,9 +73,16 @@ public class DivesiteActivity extends AppCompatActivity{
             }
         };
         divesitelist.setAdapter(firebaseRecyclerAdapter);
+
+        ImageView imageview2 = (ImageView) findViewById(R.id.iconindo);
+        imageview2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DivesiteActivity.this, About.class);
+                startActivity(intent);
+            }
+        });
     }
-
-
 
     @Override
     protected void onStart() {
