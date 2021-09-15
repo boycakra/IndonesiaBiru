@@ -57,15 +57,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/textabout"
-                    android:layout_width="match_parent"
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="ESTABLISHED IN 2020, INDONESIA BIRU FOUNDATION IS AN INDEPENDENT ORGANIZATION DOING CORAL REEF RESEARCH, RESTORATION, AND COASTAL COMMUNITIES DEVELOPMENT. IT IS OUR VISION IS TO INCREASE THE MARINE LITERACY OF INDONESIAN CITIZENS. OUR MAIN APPROACH IS SCIENCE BUT WE ALSO WORK TOGETHER WITH A LOT OF LOCAL COMMUNITIES TO INTEGRATE SCIENTIFIC FINDINGS FOR PRACTICAL USE IN THE FIELD. WE ARE BASED IN A PARADISE ISLAND, LOMBOK – BALI’S NEIGHBOURING ISLAND TO THE EAST."
-                    android:textColor="@color/white"
-                    android:textSize="13sp"
-                    android:justificationMode="inter_word" />
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/about" />
             </LinearLayout>
             <LinearLayout
                 android:layout_marginBottom="30dp"
