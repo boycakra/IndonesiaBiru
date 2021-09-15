@@ -116,33 +116,6 @@
                             android:justificationMode="inter_word" />
 
                     </LinearLayout>
-
-                    <LinearLayout
-                        android:gravity="center"
-                        android:layout_marginBottom="30dp"
-                        android:layout_alignParentBottom="true"
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="80dp">
-
-                        <ImageView
-                            android:id="@+id/text1"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            app:srcCompat="@drawable/icon_home" />
-
-                        <ImageView
-                            android:id="@+id/text2"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            app:srcCompat="@drawable/icon_dive" />
-
-                        <ImageView
-                            android:id="@+id/text3"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            app:srcCompat="@drawable/icon_maps" />
-                    </LinearLayout>
                 </RelativeLayout>
             </LinearLayout>
         </LinearLayout>
