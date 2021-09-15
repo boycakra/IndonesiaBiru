@@ -94,8 +94,6 @@ public class DivesiteActivity extends AppCompatActivity{
         public void setpictempat(Application ctx,String pictempat){
             ImageView post_pictempat=(ImageView) mView.findViewById(R.id.mainpic);
             Picasso.get().load(pictempat).into(post_pictempat);
-
-
         }
         public void setLabeltempat (String labeltempat){
             TextView post_labeltempat=(TextView)mView.findViewById(R.id.tempatlbl);
