@@ -40,11 +40,9 @@ public class SliderAdapter extends SliderViewAdapter<SliderAdapter.Holder>{
 
         ImageView imageView;
 
-        public Holder(View itemView){
+        public Holder(View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.image_view);
-
         }
     }
-
 }

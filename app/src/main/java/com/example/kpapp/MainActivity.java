@@ -2,10 +2,8 @@ package com.example.kpapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.os.Handler;
 import android.content.Intent;
-import android.widget.ImageButton;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -16,13 +14,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ImageButton imageView1 = (ImageButton) findViewById(R.id.imageView1);
-        imageView1.setOnClickListener(new View.OnClickListener() {
+
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Menu.class);
-                startActivity(intent);
+            public void run() {
+                startActivity(new Intent(MainActivity.this,Menu.class));
+                finish();
             }
-        });
+        },2500);
     }
 }
