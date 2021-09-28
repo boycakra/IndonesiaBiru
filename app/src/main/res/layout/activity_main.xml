@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageButton
+    <ImageView
         android:id="@+id/imageView1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,7 +24,8 @@
             android:layout_height="match_parent" />
 
         <LinearLayout
-            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_weight="0.9"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -38,6 +39,24 @@
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ProgressBar>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
