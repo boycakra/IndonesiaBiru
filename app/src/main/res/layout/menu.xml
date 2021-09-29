@@ -104,7 +104,8 @@
                                     <ImageView
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        app:srcCompat="@drawable/join_us" />
+                                        app:srcCompat="@drawable/join_us"
+                                        android:id="@+id/joinbutton"/>
                                 </LinearLayout>
 
                                 <LinearLayout

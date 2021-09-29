@@ -35,9 +35,12 @@
             android:name=".MapsActivity"
             android:screenOrientation="portrait">
         </activity>
+        <activity
+            android:name=".Eachdivesite"
+            android:screenOrientation="portrait">
+        </activity>
 <activity android:name=".Divesiteinfo"
     android:screenOrientation="portrait">
-
 </activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"

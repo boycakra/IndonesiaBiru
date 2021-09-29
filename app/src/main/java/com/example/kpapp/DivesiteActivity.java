@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -61,6 +62,10 @@ public class DivesiteActivity extends AppCompatActivity{
                         intent.putExtra("Divesitenamatempat",model.getNamatempat());
                         intent.putExtra("Gambardivesite",model.getPictempat());
                         intent.putExtra("Deskripsi",model.getDeskripsi());
+                        intent.putExtra("longtitude",model.getLongtitude().toString());
+                        intent.putExtra("latitude",model.getLatitude().toString());
+
+                        //Toast.makeText(v.getContext(),model.getLongtitude().toString(),Toast.LENGTH_LONG).show();
                         v.getContext().startActivity(intent);
 
                     }
@@ -70,6 +75,8 @@ public class DivesiteActivity extends AppCompatActivity{
                 viewHolder.setPin(getApplication(),model.getPin());
                 viewHolder.setNamatempat(model.getNamatempat());
                 viewHolder.setdeskripsi(model.getDeskripsi());
+                viewHolder.setLongtitude(model.getLongtitude());
+                viewHolder.setLatitude(model.getLatitude());
             }
         };
         divesitelist.setAdapter(firebaseRecyclerAdapter);
@@ -117,6 +124,14 @@ public class DivesiteActivity extends AppCompatActivity{
         public  void setdeskripsi(String deskripsi){
             TextView post_deskripsi=(TextView) mView.findViewById(R.id.deskripsidivesite);
             post_deskripsi.setText((deskripsi));
+        }
+        public  void setLongtitude(Double longtitude){
+            TextView post_longtitude=(TextView)mView.findViewById(R.id.longdivesite);
+            post_longtitude.setText(Double.toString(longtitude));
+        }
+        public  void setLatitude(Double latitude){
+            TextView post_latitude=(TextView)mView.findViewById(R.id.latdivesite);
+            post_latitude.setText(Double.toString((latitude)));
         }
     }
 }
