@@ -33,19 +33,19 @@
             android:layout_height="match_parent">
 
             <LinearLayout
-                android:layout_weight="1"
+                android:layout_weight="1.2"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_weight="3.5"
                     android:id="@+id/textlayout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <TextView
+                        android:textStyle="bold"
                         android:gravity="center"
                         android:id="@+id/textinfo"
                         android:layout_width="match_parent"
@@ -59,8 +59,7 @@
 
                 <LinearLayout
                     android:layout_marginHorizontal="20dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_weight="0.6"
+                    android:layout_weight="0.8"
                     android:id="@+id/kotak2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -82,19 +81,21 @@
                 android:layout_height="match_parent">
 
                 <LinearLayout
-                    android:layout_weight="1.5"
+                    android:layout_marginTop="-5dp"
+                    android:layout_weight="2.3"
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <LinearLayout
+                        android:layout_weight="6"
                         android:layout_marginHorizontal="20dp"
                         android:id="@+id/textlayout1"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="match_parent">
 
                         <TextView
-                            android:textSize="15dp"
+                            android:textSize="16dp"
                             android:id="@+id/diveinfo"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -125,22 +126,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <RelativeLayout
-                        android:id="@+id/kotak3"
+                    <LinearLayout
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:id="@+id/textlayout2"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_below="@id/kotak2">
+                        android:layout_height="match_parent">
 
-                        <LinearLayout
-                            android:layout_marginHorizontal="20dp"
-                            android:layout_marginTop="5dp"
-                            android:layout_weight="1"
-                            android:id="@+id/textlayout2"
+                        <ScrollView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
                             <TextView
-                                android:textSize="15dp"
+                                android:lineSpacingExtra="4dp"
+                                android:textSize="16dp"
                                 android:id="@+id/deskripsi"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
@@ -148,10 +148,8 @@
                                 android:textColor="@color/white"
                                 android:justificationMode="inter_word">
                             </TextView>
-
-
-                        </LinearLayout>
-                    </RelativeLayout>
+                        </ScrollView>
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

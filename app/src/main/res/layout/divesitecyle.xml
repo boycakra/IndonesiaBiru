@@ -30,9 +30,10 @@
         </ImageView>
 
         <TextView
-            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textSize="20sp"
             android:layout_marginLeft="20dp"
-            android:layout_marginBottom="35dp"
+            android:layout_marginBottom="30dp"
             android:gravity="bottom"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -41,7 +42,7 @@
             android:textColor="@color/white" />
 
         <TextView
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:layout_marginLeft="20dp"
             android:layout_marginBottom="10dp"
             android:gravity="bottom"
@@ -70,14 +71,15 @@
             android:id="@+id/longdivesite"
             android:textColor="@color/white">
         </TextView>
+
         <TextView
-            android:gravity="bottom"
+            android:id="@+id/latdivesite"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:visibility="invisible"
+            android:gravity="bottom"
             android:text="latitude"
-            android:id="@+id/latdivesite"
-            android:textColor="@color/white">
+            android:textColor="@color/white"
+            android:visibility="invisible">
         </TextView>
 
         <ImageView
