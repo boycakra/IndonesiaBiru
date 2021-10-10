@@ -17,19 +17,20 @@ public class Divesiteinfo extends AppCompatActivity {
     String longtitude;
     String latitude;
     String tempat;
+    String gambardivesite;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.divesiteinfo);
         tempat= getIntent().getStringExtra("Divesitenamatempat");
         String labeltempat= getIntent().getStringExtra("Divesitelabel");
-        String Gambardivesite= getIntent().getStringExtra("Gambardivesite");
+        gambardivesite= getIntent().getStringExtra("Gambardivesite");
         String Deskripsi= getIntent().getStringExtra("Deskripsi");
         longtitude = getIntent().getStringExtra("longtitude");
         latitude = getIntent().getStringExtra("latitude");
 
         ImageView post_pictempat=(ImageView)findViewById(R.id.gambardivesite);
-        Picasso.get().load(Gambardivesite).into(post_pictempat);
+        Picasso.get().load(gambardivesite).into(post_pictempat);
 
         TextView post_labeltempat=(TextView)findViewById(R.id.textinfo);
         post_labeltempat.setText(labeltempat);
@@ -49,6 +50,7 @@ public class Divesiteinfo extends AppCompatActivity {
                 intent.putExtra("longtitude",longtitude);
                 intent.putExtra("latitude",latitude);
                 intent.putExtra("Divesitenamatempat",tempat);
+                intent.putExtra("Gambardivesite",gambardivesite);
                 v.getContext().startActivity(intent);
             }
         });

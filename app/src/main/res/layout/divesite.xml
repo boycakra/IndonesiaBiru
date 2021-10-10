@@ -1,43 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DivesiteActivity"
-    android:background="@color/black">
+    android:background="@color/black"
+    tools:context=".DivesiteActivity">
 
-<<<<<<< Updated upstream
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <ImageView
-            android:id="@+id/iconindo"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="150dp"
-            android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/logoatas"
-
-            />
-<androidx.recyclerview.widget.RecyclerView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/rycleview"
-    android:layout_below="@id/iconindo"
-    tools:listitem="@layout/divesitecyle"
-    >
-
-</androidx.recyclerview.widget.RecyclerView>
-
-    </RelativeLayout>
-
-</ScrollView>
-=======
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -50,14 +19,15 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/logoatas"
+                android:id="@+id/iconindo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
                 app:srcCompat="@drawable/logoatas" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -81,61 +51,8 @@
 
                     </androidx.recyclerview.widget.RecyclerView>
                 </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginBottom="30dp"
-                        android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="right">
-
-                            <ImageView
-                                android:id="@+id/text1"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                app:srcCompat="@drawable/icon_home" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="60dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:gravity="center">
-
-                            <ImageView
-                                android:id="@+id/text2"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                app:srcCompat="@drawable/icon_dive" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:gravity="left">
-
-                            <ImageView
-                                android:id="@+id/text3"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                app:srcCompat="@drawable/icon_maps" />
-                        </LinearLayout>
-                    </LinearLayout>
-                </LinearLayout>
             </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
->>>>>>> Stashed changes
+
 </androidx.constraintlayout.widget.ConstraintLayout>

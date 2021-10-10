@@ -1,5 +1,9 @@
 package com.example.kpapp;
 
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -8,6 +12,8 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -20,12 +26,14 @@ import com.google.firebase.database.ValueEventListener;
 import org.jetbrains.annotations.NotNull;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
 public class Eachdivesite extends FragmentActivity implements OnMapReadyCallback {
     private GoogleMap mMap;
     String longtitude;
     String latitude;
     String tempat;
+    String gambardivesite;
 
 
     @Override
@@ -37,6 +45,7 @@ public class Eachdivesite extends FragmentActivity implements OnMapReadyCallback
         longtitude = getIntent().getStringExtra("longtitude");
         latitude = getIntent().getStringExtra("latitude");
         tempat= getIntent().getStringExtra("Divesitenamatempat");
+        gambardivesite= getIntent().getStringExtra("Gambardivesite");
 
 
 
@@ -51,8 +60,11 @@ public class Eachdivesite extends FragmentActivity implements OnMapReadyCallback
         double latitude1 = Double.parseDouble(latitude);
         double Longtitude1 = Double.parseDouble(longtitude);
         LatLng eachsite = new LatLng(latitude1,Longtitude1);
-        mMap.addMarker(new MarkerOptions().position(eachsite).title(tempat));
+
+        mMap.addMarker(new MarkerOptions().position(eachsite).title(tempat).snippet(gambardivesite)).setIcon(bitmapDescriptorFromVector(getApplicationContext(), R.drawable.marker));
+
         mMap.moveCamera(CameraUpdateFactory.newLatLng(eachsite));
+        mMap.setInfoWindowAdapter(new InfowindowAdaptor(Eachdivesite.this));
 
         // Move the camera instantly to Sydney with a zoom of 15.
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(eachsite, 15));
@@ -70,5 +82,13 @@ public class Eachdivesite extends FragmentActivity implements OnMapReadyCallback
                 .build();                   // Creates a CameraPosition from the builder
         mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
 
+    }
+    private BitmapDescriptor bitmapDescriptorFromVector(Context context, int vectorResId) {
+        Drawable vectorDrawable = ContextCompat.getDrawable(context, vectorResId);
+        vectorDrawable.setBounds(0, 0, vectorDrawable.getIntrinsicWidth(), vectorDrawable.getIntrinsicHeight());
+        Bitmap bitmap = Bitmap.createBitmap(vectorDrawable.getIntrinsicWidth(), vectorDrawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
+        vectorDrawable.draw(canvas);
+        return BitmapDescriptorFactory.fromBitmap(bitmap);
     }
 }
