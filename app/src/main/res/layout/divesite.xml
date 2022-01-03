@@ -1,58 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".DivesiteActivity">
+    tools:context=".DivesiteActivity"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_weight="14"
+        <TextView
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="50dp"
+            android:text="Dive Site"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:fontFamily="@font/sf_semibold"/>
 
-            <ImageView
-                android:id="@+id/iconindo"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
-                app:srcCompat="@drawable/logoatas" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rycleview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentBottom="true">
-
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/rycleview"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        tools:listitem="@layout/divesitecyle"
-                        android:paddingBottom="50dp"
-                        android:clipToPadding="false">
-
-                    </androidx.recyclerview.widget.RecyclerView>
-                </LinearLayout>
-            </RelativeLayout>
-        </LinearLayout>
-    </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_height="match_parent"
+            tools:listitem="@layout/divesitecyle"
+            android:clipToPadding="false"/>
+</LinearLayout>

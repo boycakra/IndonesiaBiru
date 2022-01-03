@@ -11,40 +11,29 @@ import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+
 public class Menu extends AppCompatActivity {
-    SliderView sliderView;
-    int[] images = {R.drawable.kura,
-            R.drawable.dive1,
-            R.drawable.ikan,
-            R.drawable.karang,
-            R.drawable.ikan1,
-            R.drawable.karang1};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu);
-        sliderView = findViewById(R.id.image_slider);
 
-        SliderAdapter sliderAdapter = new SliderAdapter(images);
 
-        sliderView.setSliderAdapter(sliderAdapter);
-        sliderView.setIndicatorAnimation(IndicatorAnimationType.WORM);
-        sliderView.setSliderTransformAnimation(SliderAnimations.DEPTHTRANSFORMATION);
-        sliderView.startAutoCycle();
+//        ImageView joinnow = (ImageView)findViewById(R.id.joinbutton);
+//        joinnow.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent();
+//                intent.setAction(Intent.ACTION_VIEW);
+//                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+//                intent.setData(Uri.parse("https://indonesia-biru.com/join-us/"));
+//                startActivity(intent);
+//            }
+//        });
 
-        ImageView joinnow = (ImageView)findViewById(R.id.joinbutton);
-        joinnow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setAction(Intent.ACTION_VIEW);
-                intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse("https://indonesia-biru.com/join-us/"));
-                startActivity(intent);
-            }
-        });
-
-        ImageView imageView1 = (ImageView) findViewById(R.id.text2);
+        CardView imageView1 = (CardView) findViewById(R.id.text2);
         imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,7 +41,7 @@ public class Menu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        ImageView imageview2 = (ImageView) findViewById(R.id.logo);
+        CardView imageview2 = (CardView) findViewById(R.id.logo);
         imageview2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,7 +49,7 @@ public class Menu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        ImageView imageView3 = (ImageView) findViewById(R.id.text3);
+        CardView imageView3 = (CardView) findViewById(R.id.text3);
         imageView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

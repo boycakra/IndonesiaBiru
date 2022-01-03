@@ -22,6 +22,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,Menu.class));
                 finish();
             }
-        },2500);
+        },2000);
     }
 }

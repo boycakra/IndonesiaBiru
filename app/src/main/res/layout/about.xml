@@ -1,68 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black">
+    android:background="@color/black"
+    android:orientation="vertical">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="50dp"
+        android:text="About Us"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="@font/sf_semibold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_weight="14"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/logoatas"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/logoatas" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginTop="15dp"
-            android:layout_weight="1"
-            android:id="@+id/layoutatas"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_weight="2"
-                android:layout_marginTop="10dp"
-                android:id="@+id/layoutlogotengah"
+            <ImageView
+                android:id="@+id/logotengah"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                tools:ignore="MissingConstraints">
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/logoibfkotak"
+                android:layout_marginBottom="10dp"/>
 
-                <ImageView
-                    android:id="@+id/logotengah"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    app:srcCompat="@drawable/logoibfkotak" />
-            </LinearLayout>
-
-            <LinearLayout
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/sf_regular"
                 android:layout_marginHorizontal="15dp"
-                android:layout_weight="1"
-                android:id="@+id/textlayout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/about" />
-            </LinearLayout>
+                android:text="Established in 2020, Indonesia Biru Foundation (IBF) is an independent organization doing coral reef research, restoration, and coastal communities development. \n\nIt is our vision is to increase the marine literacy of Indonesian citizens. Our main approach is science but we also work together with a lot of local communities to integrate scientific findings for practical use in the field. \n\nWe are based in a paradise island, Lombok – Bali’s neighboring island to the east." />
         </LinearLayout>
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
