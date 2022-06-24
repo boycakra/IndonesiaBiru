@@ -111,6 +111,7 @@
                     app:cardCornerRadius="20dp"
                     app:cardBackgroundColor="@color/blue"
                     android:layout_marginVertical="10dp">
+                    orientation
 
                     <LinearLayout
                         android:layout_width="match_parent"

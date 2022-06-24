@@ -4,7 +4,7 @@ public class Divesitemodel {
     private String labeltempat;
     private String namatempat;
     private String pictempat;
-    public  String pin;
+    public String pin;
     public String deskripsi;
     public Double longtitude;
     public Double latitude;

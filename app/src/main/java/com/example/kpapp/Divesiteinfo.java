@@ -74,8 +74,5 @@ public class Divesiteinfo extends AppCompatActivity {
                 v.getContext().startActivity(intent);
             }
         });
-
-
     }
-
 }
