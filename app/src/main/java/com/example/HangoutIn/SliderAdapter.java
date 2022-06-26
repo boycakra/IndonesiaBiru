@@ -1,4 +1,4 @@
-package com.example.kpapp;
+package com.example.HangoutIn;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

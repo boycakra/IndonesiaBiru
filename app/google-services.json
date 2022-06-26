@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "291997018789",
-    "firebase_url": "https://indonesiabiru-5ea4f-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "indonesiabiru-5ea4f",
-    "storage_bucket": "indonesiabiru-5ea4f.appspot.com"
+    "project_number": "331979958008",
+    "firebase_url": "https://jakarta-dive-site-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "jakarta-dive-site",
+    "storage_bucket": "jakarta-dive-site.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:291997018789:android:7ae8c7fea976a29739bb4c",
+        "mobilesdk_app_id": "1:331979958008:android:4aa2651554105fd0773d0d",
         "android_client_info": {
-          "package_name": "com.example.kpapp"
+          "package_name": "com.example.jakartadivesite"
         }
       },
       "oauth_client": [
         {
-          "client_id": "291997018789-bg53uor9vlmrq8pcic4np39br5d92qkl.apps.googleusercontent.com",
+          "client_id": "331979958008-t2tj0e3bsi6ahc17cvva258ebksbcpf9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jakartadivesite",
+            "certificate_hash": "f09d0655a1ae19e2e64e9fdc691cc3de6f7fb1db"
+          }
+        },
+        {
+          "client_id": "331979958008-er802jqaad53jlrkqv3sshl72lff06le.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA0lpA3xSJoPpf-EcTjsrVRqpBWMbfkMv8"
+          "current_key": "AIzaSyBIi3WNgeIJ7XPoyTbRxWMUCKnG3p9PAi0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "291997018789-bg53uor9vlmrq8pcic4np39br5d92qkl.apps.googleusercontent.com",
+              "client_id": "331979958008-er802jqaad53jlrkqv3sshl72lff06le.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

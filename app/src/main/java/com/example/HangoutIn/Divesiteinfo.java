@@ -1,17 +1,13 @@
-package com.example.kpapp;
+package com.example.HangoutIn;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
-import com.squareup.picasso.Picasso;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,7 +29,7 @@ public class Divesiteinfo extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.divesiteinfo);
+        setContentView(R.layout.hangoutinfo);
         sliderView = findViewById(R.id.image_slider);
 
         SliderAdapter sliderAdapter = new SliderAdapter(images);

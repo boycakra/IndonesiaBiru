@@ -1,4 +1,4 @@
-package com.example.kpapp;
+package com.example.HangoutIn;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,7 +12,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -30,7 +29,7 @@ public class DivesiteActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.divesite);
+        setContentView(R.layout.hangoutlist);
         mdatabase = FirebaseDatabase.getInstance().getReference().child("divesite");
         mdatabase.keepSynced(true);
         mdatabase.get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
@@ -51,7 +50,7 @@ public class DivesiteActivity extends AppCompatActivity{
         divesitelist.setHasFixedSize(true);
         divesitelist.setLayoutManager(new LinearLayoutManager(this));
         firebaseRecyclerAdapter= new FirebaseRecyclerAdapter<Divesitemodel,divesiteholder>
-                (Divesitemodel.class,R.layout.divesitecyle,divesiteholder.class,mdatabase) {
+                (Divesitemodel.class,R.layout.hangoutcycle,divesiteholder.class,mdatabase) {
             @Override
             protected void populateViewHolder(divesiteholder viewHolder, Divesitemodel model, int position) {
                 viewHolder.itemView.setOnClickListener(new View.OnClickListener() {

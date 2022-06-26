@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.kpapp" >
+    package="com.example.HangoutIn" >
 <uses-permission android:name="android.permission.INTERNET">
 
 </uses-permission>
@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/icon_indonesiabiru_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KpApp">
-        <activity android:name=".MainActivity"
+        <activity android:name="com.example.HangoutIn.MainActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -20,26 +20,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.kpapp.Menu"
+            android:name="com.example.HangoutIn.Menu"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name="com.example.kpapp.DivesiteActivity"
+            android:name="com.example.HangoutIn.DivesiteActivity"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name="com.example.kpapp.About"
+            android:name="com.example.HangoutIn.About"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".MapsActivity"
+            android:name="com.example.HangoutIn.MapsActivity"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".Eachdivesite"
+            android:name="com.example.HangoutIn.Eachdivesite"
             android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".Divesiteinfo"
+        <activity android:name="com.example.HangoutIn.Divesiteinfo"
     android:screenOrientation="portrait">
         </activity>
         <meta-data

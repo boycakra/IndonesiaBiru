@@ -1,4 +1,4 @@
-package com.example.kpapp;
+package com.example.HangoutIn;
 
 import org.junit.Test;
 
