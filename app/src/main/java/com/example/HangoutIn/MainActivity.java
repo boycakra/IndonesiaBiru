@@ -1,4 +1,4 @@
-package com.example.kpapp;
+package com.example.HangoutIn;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;

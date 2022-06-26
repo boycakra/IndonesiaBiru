@@ -1,2 +1,2 @@
-rootProject.name = "kp app"
+rootProject.name = "hangoutIn"
 include ':app'

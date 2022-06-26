@@ -1,4 +1,4 @@
-package com.example.kpapp;
+package com.example.HangoutIn;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -6,7 +6,7 @@ import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
-import com.example.kpapp.databinding.ActivityMapsBinding;
+import com.example.HangoutIn.databinding.ActivityMapsBinding;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;

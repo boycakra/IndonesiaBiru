@@ -4,19 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/white"
     tools:context=".DivesiteActivity"
     android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="Dive Site"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:fontFamily="@font/sf_semibold"/>
+       <androidx.appcompat.widget.SearchView
+           android:id="@+id/search_bar"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_margin="15dp"
+           app:queryHint="Cari berdasarkan nama tempat"
+               />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rycleview"
