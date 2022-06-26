@@ -8,18 +8,20 @@
     tools:context=".DivesiteActivity"
     android:orientation="vertical">
 
-       <androidx.appcompat.widget.SearchView
-           android:id="@+id/search_bar"
-           android:layout_width="0dp"
-           android:layout_height="wrap_content"
-           android:layout_margin="15dp"
-           app:queryHint="Cari berdasarkan nama tempat"
-               />
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:queryHint="Cari berdasarkan nama tempat"
+        app:iconifiedByDefault="false"
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rycleview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:listitem="@layout/hangoutcycle"
-            android:clipToPadding="false"/>
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        tools:listitem="@layout/hangoutcycle" />
 </LinearLayout>
