@@ -60,7 +60,7 @@
                                 android:layout_marginTop="10dp"
                                 android:textSize="20sp"
                                 android:paddingVertical="5dp"
-                                android:fontFamily="@font/montserrat_light"/>
+                                android:fontFamily="@font/montserrat_regular"/>
 
                             <ImageView
                                 android:layout_width="90dp"
@@ -92,7 +92,7 @@
                                 android:layout_marginTop="10dp"
                                 android:textSize="20sp"
                                 android:paddingVertical="5dp"
-                                android:fontFamily="@font/montserrat_light"/>
+                                android:fontFamily="@font/montserrat_regular"/>
 
                             <ImageView
                                 android:layout_width="90dp"
@@ -126,7 +126,7 @@
                             android:layout_marginTop="10dp"
                             android:textSize="20sp"
                             android:paddingVertical="5dp"
-                            android:fontFamily="@font/montserrat_light"/>
+                            android:fontFamily="@font/montserrat_regular"/>
 
                         <ImageView
                             android:layout_width="90dp"
@@ -164,7 +164,7 @@
                         android:layout_marginTop="10dp"
                         android:textSize="20sp"
                         android:paddingVertical="5dp"
-                        android:fontFamily="@font/montserrat_light"/>
+                        android:fontFamily="@font/montserrat_regular"/>
 
                     <ImageView
                         android:layout_width="90dp"
@@ -197,7 +197,7 @@
                             android:layout_marginTop="10dp"
                             android:textSize="20sp"
                             android:paddingVertical="5dp"
-                            android:fontFamily="@font/montserrat_light"/>
+                            android:fontFamily="@font/montserrat_regular"/>
 
                         <ImageView
                             android:layout_width="90dp"

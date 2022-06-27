@@ -12,7 +12,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/black"
+        android:background="@color/white"
         android:orientation="vertical"
         android:elevation="90dp">
 
@@ -37,7 +37,7 @@
             android:text="Label"
             android:id="@+id/tempatlbl"
             android:textColor="@color/white"
-            android:fontFamily="@font/sf_semibold"/>
+            android:fontFamily="@font/montserrat_regular"/>
 
         <TextView
             android:id="@+id/tempatsite"
@@ -45,7 +45,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
             android:layout_marginBottom="10dp"
-            android:fontFamily="@font/sf_regular"
+            android:fontFamily="@font/montserrat_medium"
             android:gravity="bottom"
             android:text="Nama tempat"
             android:textColor="@color/white"

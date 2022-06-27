@@ -2,6 +2,7 @@ package com.example.HangoutIn;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -25,6 +26,7 @@ public class DivesiteActivity extends AppCompatActivity{
     private RecyclerView divesitelist;
     private DatabaseReference mdatabase;
     private FirebaseRecyclerAdapter firebaseRecyclerAdapter;
+    private SearchView searchView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,6 +82,7 @@ public class DivesiteActivity extends AppCompatActivity{
         };
         divesitelist.setAdapter(firebaseRecyclerAdapter);
     }
+
 
     @Override
     protected void onStart() {
