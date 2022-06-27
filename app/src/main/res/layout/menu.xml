@@ -208,9 +208,28 @@
 
 
                     </LinearLayout>
-                </androidx.cardview.widget.CardView></LinearLayout>
 
+                </androidx.cardview.widget.CardView></LinearLayout>
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/image_slider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="10dp"
+                    app:sliderAnimationDuration="2000"
+                    app:sliderAutoCycleDirection="right"
+                    app:sliderAutoCycleEnabled="true"
+                    app:sliderIndicatorAnimationDuration="1000"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="4"
+                    app:sliderStartAutoCycle="true" />
             </LinearLayout>
+
         </ScrollView>
     </LinearLayout>
 </LinearLayout>

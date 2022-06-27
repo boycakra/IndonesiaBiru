@@ -7,13 +7,32 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
+import com.smarteist.autoimageslider.SliderAnimations;
+import com.smarteist.autoimageslider.SliderView;
+
 public class Menu extends AppCompatActivity {
+
+    SliderView sliderView;
+    int[] images = {R.drawable.raves,
+            R.drawable.up,
+            R.drawable.ray,
+            R.drawable.homephoto1,
+            R.drawable.homephoto2,
+            R.drawable.homephoto3};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu);
+        sliderView = findViewById(R.id.image_slider);
 
+        SliderAdapter sliderAdapter = new SliderAdapter(images);
+
+        sliderView.setSliderAdapter(sliderAdapter);
+        sliderView.setIndicatorAnimation(IndicatorAnimationType.WORM);
+        sliderView.setSliderTransformAnimation(SliderAnimations.DEPTHTRANSFORMATION);
+        sliderView.startAutoCycle();
 
 //        ImageView joinnow = (ImageView)findViewById(R.id.joinbutton);
 //        joinnow.setOnClickListener(new View.OnClickListener() {
