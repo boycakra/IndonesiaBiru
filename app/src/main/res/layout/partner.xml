@@ -27,31 +27,26 @@
             android:textSize="16sp"
             android:fontFamily="@font/montserrat_light"
             android:layout_marginHorizontal="15dp"
-            android:text="Mencari tempat berkumpul dikala pandemi covid-19 dengan UMKM yang menjaga kebersihan dan protokol kesehatan. " />
-
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/prokesumkm"
+            android:text="Mencari tempat berkumpul dan mendukung perekonomian pegiat Usaha Mikro Kecil Menengah dikala pandemi covid-19 bersama HangoutIn " />
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="23dp"
+            android:orientation="horizontal"
             android:layout_gravity="center"
-            android:layout_marginVertical="30dp"
+            android:layout_marginVertical="20dp"
             >
-
-            <TextView
-                android:text="Prokes UMKM"
-                android:layout_width="130dp"
+            <ImageView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                android:gravity="center"
-                android:paddingVertical="12dp"
-                android:paddingHorizontal="8dp"
-                android:fontFamily="@font/montserrat_regular"
-                android:background="@color/grey"/>
-        </androidx.cardview.widget.CardView>
-        <TextView
+                android:src="@drawable/people"
+                android:layout_marginRight="80dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/toko"/>
+        </LinearLayout>
+            <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
@@ -60,26 +55,25 @@
             android:layout_marginHorizontal="15dp"
             android:text="Cari tempat yang kalian inginkan dan tetap menerapkan protokol kesehatan terkini"
             />
-        <androidx.cardview.widget.CardView
-            android:id="@+id/prokesumum"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="23dp"
+            android:orientation="horizontal"
             android:layout_gravity="center"
-            android:layout_marginVertical="30dp"
+            android:layout_marginVertical="20dp"
             >
-            <TextView
-                android:text="Prokes Umum"
-                android:layout_width="130dp"
+            <ImageView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                android:gravity="center"
-                android:paddingVertical="12dp"
-                android:paddingHorizontal="8dp"
-                android:fontFamily="@font/montserrat_regular"
-                android:background="@color/grey"/>
-        </androidx.cardview.widget.CardView>
+                android:src="@drawable/jarak"
+                android:layout_marginRight="80dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cuci"/>
+        </LinearLayout>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -99,55 +93,29 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"></LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
                 android:layout_weight="1"
-                >
-                <LinearLayout
+                android:orientation="vertical">
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:text="Hubungi kami melalui E-Mail "
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:layout_marginHorizontal="15dp"
                     android:layout_weight="1"/>
-                <LinearLayout
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1">
-                <ImageView
-                    android:id="@+id/telefon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/phone"
-                    android:layout_weight="1"
-                    />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
-                <ImageView
-                    android:id="@+id/whatsapp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/whatsapp"
-                    android:layout_weight="1"
-                    />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"/>
+                    android:text="info@hangoutin.com"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_weight="0.2"/>
+
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"></LinearLayout>
+
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
