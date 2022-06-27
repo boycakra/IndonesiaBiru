@@ -52,7 +52,7 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:text="Cari Tempat Kumpul"
+                                android:text="Tempat Favorit"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/black"
@@ -67,7 +67,7 @@
                                 android:layout_height="90dp"
                                 android:layout_gravity="right"
                                 android:paddingBottom="30dp"
-                                app:srcCompat="@drawable/hangoutin"/>
+                                app:srcCompat="@drawable/favorit"/>
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
 
@@ -84,7 +84,7 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:text="Partner"
+                                android:text="Kategori"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/black"
@@ -99,7 +99,7 @@
                                 android:layout_height="90dp"
                                 android:layout_gravity="right"
                                 android:paddingBottom="30dp"
-                                app:srcCompat="@drawable/partner"/>
+                                app:srcCompat="@drawable/kategori"/>
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
@@ -118,7 +118,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:text="Hot Promo!"
+                            android:text="Cari Tempat Kumpul "
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textColor="@color/black"
@@ -134,7 +134,7 @@
                             android:layout_gravity="bottom"
                             android:layout_marginLeft="20dp"
                             android:layout_marginBottom="8dp"
-                            app:srcCompat="@drawable/hotpromo"/>
+                            app:srcCompat="@drawable/tempat"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             <LinearLayout
@@ -156,7 +156,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:text="Kategori"
+                        android:text="Partner"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
@@ -171,7 +171,7 @@
                         android:layout_height="90dp"
                         android:layout_gravity="right"
                         android:paddingBottom="30dp"
-                        app:srcCompat="@drawable/kategori"/>
+                        app:srcCompat="@drawable/partner"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
