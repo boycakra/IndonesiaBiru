@@ -18,6 +18,7 @@ public class Divesiteinfo extends AppCompatActivity {
     String latitude;
     String tempat;
     String gambardivesite;
+    String kapasitas;
     SliderView sliderView;
     int[] images = {R.drawable.kura,
             R.drawable.dive1,
@@ -38,6 +39,7 @@ public class Divesiteinfo extends AppCompatActivity {
         sliderView.setIndicatorAnimation(IndicatorAnimationType.WORM);
         sliderView.setSliderTransformAnimation(SliderAnimations.DEPTHTRANSFORMATION);
         sliderView.startAutoCycle();
+        String kapasitas= getIntent().getStringExtra("kapasitas");
         tempat= getIntent().getStringExtra("Divesitenamatempat");
         String labeltempat= getIntent().getStringExtra("Divesitelabel");
         gambardivesite= getIntent().getStringExtra("Gambardivesite");
@@ -50,6 +52,9 @@ public class Divesiteinfo extends AppCompatActivity {
 
         TextView post_labeltempat=(TextView)findViewById(R.id.textinfo);
         post_labeltempat.setText(labeltempat);
+
+        TextView post_kapasitas=(TextView)findViewById(R.id.kapasitas);
+        post_kapasitas.setText(kapasitas);
 
         TextView post_namatempat=(TextView)findViewById(R.id.diveinfo);
         post_namatempat.setText(tempat);

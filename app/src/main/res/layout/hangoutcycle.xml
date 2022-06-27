@@ -65,6 +65,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:visibility="invisible"
+            android:text="Kapasitas"
+            android:id="@+id/kapasitas"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
             android:text="longtitude"
             android:id="@+id/longdivesite"
             android:textColor="@color/white"/>

@@ -8,8 +8,9 @@ public class Divesitemodel {
     public String deskripsi;
     public Double longtitude;
     public Double latitude;
+    public String kapasitas;
 
-    public Divesitemodel(String labeltempat, String namatempat, String pictempat, String pin,String deskripsi, Double longtitude, Double latitude) {
+    public Divesitemodel(String labeltempat, String namatempat, String pictempat, String pin,String deskripsi, Double longtitude, Double latitude,String kapasitas) {
         this.labeltempat = labeltempat;
         this.namatempat = namatempat;
         this.pictempat = pictempat;
@@ -17,14 +18,17 @@ public class Divesitemodel {
         this.deskripsi = deskripsi;
         this.longtitude=longtitude;
         this.latitude=latitude;
+        this.kapasitas=kapasitas;
     }
-    public String getLabeltempat() {
-        return labeltempat;
-    }
+    public String getLabeltempat() {return labeltempat;  }
 
     public void setLabeltempat(String labeltempat) {
         this.labeltempat = labeltempat;
     }
+
+    public String getKapasitas() {return kapasitas; }
+
+    public void setKapasitas(String kapasitas) {this.kapasitas = kapasitas; }
 
     public String getNamatempat() {
         return namatempat;

@@ -52,6 +52,26 @@
             android:text="Label"
             android:textColor="@color/black"
             android:fontFamily="@font/montserrat_regular"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kapasitas tersedia:"
+                android:fontFamily="@font/montserrat_light"
+                android:textSize="18dp"
+                android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/terimakapasitas"
+            android:text="Kapasitas"
+            android:fontFamily="@font/montserrat_light"
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+        </LinearLayout>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/map_location"
