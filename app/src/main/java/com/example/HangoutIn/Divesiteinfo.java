@@ -50,13 +50,13 @@ public class Divesiteinfo extends AppCompatActivity {
 //        ImageView post_pictempat=(ImageView)findViewById(R.id.gambardivesite);
 //        Picasso.get().load(gambardivesite).into(post_pictempat);
 
-        TextView post_labeltempat=(TextView)findViewById(R.id.textinfo);
+        TextView post_labeltempat=(TextView)findViewById(R.id.kategoritempat);
         post_labeltempat.setText(labeltempat);
 
-        TextView post_kapasitas=(TextView)findViewById(R.id.kapasitas);
+        TextView post_kapasitas=(TextView)findViewById(R.id.terimakapasitas);
         post_kapasitas.setText(kapasitas);
 
-        TextView post_namatempat=(TextView)findViewById(R.id.diveinfo);
+        TextView post_namatempat=(TextView)findViewById(R.id.namatempat);
         post_namatempat.setText(tempat);
 
         TextView post_deskripsi=(TextView)findViewById(R.id.deskripsi);

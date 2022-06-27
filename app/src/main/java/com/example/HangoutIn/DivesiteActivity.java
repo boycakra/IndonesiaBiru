@@ -59,6 +59,8 @@ public class DivesiteActivity extends AppCompatActivity{
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(v.getContext(), Divesiteinfo.class);
+
+                        intent.putExtra("kapasitas",model.getKapasitas());
                         intent.putExtra("Divesitelabel",model.getLabeltempat());
                         intent.putExtra("Divesitenamatempat",model.getNamatempat());
                         intent.putExtra("Gambardivesite",model.getPictempat());
@@ -71,6 +73,8 @@ public class DivesiteActivity extends AppCompatActivity{
 
                     }
                 });
+
+                viewHolder.setkapasitas(model.getKapasitas());
                 viewHolder.setLabeltempat(model.getLabeltempat());
                 viewHolder.setpictempat(getApplication(),model.getPictempat());
                 viewHolder.setPin(getApplication(),model.getPin());
@@ -98,6 +102,14 @@ public class DivesiteActivity extends AppCompatActivity{
             mView=itemView;
 
         }
+
+        public  void setkapasitas(String kapasitas){
+            TextView post_kapasitas=(TextView) mView.findViewById(R.id.kapasitas);
+            post_kapasitas.setText((kapasitas));
+        }
+
+
+
         public void setpictempat(Application ctx,String pictempat){
             ImageView post_pictempat=(ImageView) mView.findViewById(R.id.mainpic);
             Picasso.get().load(pictempat).into(post_pictempat);
