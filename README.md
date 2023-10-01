@@ -50,9 +50,6 @@ Indonesia Biru Foundation is a non-governmental organization (NGO) dedicated to 
 
 - **Marine Conservation**: Learn about the conservation efforts undertaken by Indonesia Biru Foundation and how you can contribute.
 
-### Installation
-
-To install IndonesiaBiru, please visit the [Google Play Store](#) (Provide the link to the Play Store here) and follow the installation instructions.
 
 ### Contributing
 
@@ -62,9 +59,7 @@ We welcome contributions from the community to enhance the features and capabili
 
 This application is open-source software licensed under the [MIT License](LICENSE).
 
-### Contact
 
-For questions, feedback, or collaboration inquiries, please contact us at [contact@indonesiabirufoundation.org](mailto:contact@indonesiabirufoundation.org).
 
 ---
 
