@@ -1,4 +1,4 @@
-# IndonesiaBiru - Mobile App with Machine Learning for Skin Disease Identification
+# IndonesiaBiru 
 
 [![IndonesiaBiru](https://img.youtube.com/vi/c4XREs9Ll58/0.jpg)](https://www.youtube.com/watch?v=c4XREs9Ll58)
 
