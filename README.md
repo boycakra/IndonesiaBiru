@@ -1,6 +1,6 @@
 # IndonesiaBiru - Mobile App with Machine Learning for Skin Disease Identification
 
-[![IndonesiaBiru](https://img.youtube.com/vi/ZIXwIHZkH20/0.jpg)](https://www.youtube.com/watch?v=k8nmS0PBkVU)
+[![IndonesiaBiru](https://img.youtube.com/vi/k8nmS0PBkVU/0.jpg)](https://www.youtube.com/watch?v=k8nmS0PBkVU)
 
 IndonesiaBiru is a mobile application with integrated machine learning algorithms that offers users a quick and reliable method to identify potential skin diseases using just their smartphones.
 
