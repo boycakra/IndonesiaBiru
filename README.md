@@ -2,8 +2,7 @@
 
 [![IndonesiaBiru](https://img.youtube.com/vi/c4XREs9Ll58/0.jpg)](https://www.youtube.com/watch?v=c4XREs9Ll58)
 
-
-IndonesiaBiru is a mobile application with integrated machine learning algorithms that offers users a quick and reliable method to identify potential skin diseases using just their smartphones.
+Welcome to the Indonesia Biru Foundation's Android application for diving spots in the Lombok region. This app is designed to promote marine conservation and boost diving tourism in the area by providing valuable information about diving locations.
 
 ## Application Features
 
