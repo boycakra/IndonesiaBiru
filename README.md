@@ -2,6 +2,7 @@
 
 [![IndonesiaBiru](https://img.youtube.com/vi/c4XREs9Ll58/0.jpg)](https://www.youtube.com/watch?v=c4XREs9Ll58)
 
+
 IndonesiaBiru is a mobile application with integrated machine learning algorithms that offers users a quick and reliable method to identify potential skin diseases using just their smartphones.
 
 ## Application Features
